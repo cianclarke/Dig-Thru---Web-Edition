@@ -1,0 +1,113 @@
+body { padding: 0px; margin: 0px;}
+#location {
+	width: 50%;
+	height: 100%;
+	background: #252525;
+	float: left;
+}
+#mapcanvas, #shovel{
+	width: 50%;
+	height: 100%;
+	float: right;	
+} 
+
+#shovel {
+	background: url("shovel.jpg") no-repeat scroll right center #252525;
+	z-index: 1000;
+}
+#addressSearch{
+	margins: auto;
+	text-align: center;
+	margin-top: 20px;
+}
+#address{
+	width: 60%;
+	margins: auto;
+	font-size: 1.4em;
+}
+#goButton{
+	font-size: 1.4em;
+}
+
+.howold {
+	margin: auto;
+	color: #fff;
+	margin-top:10%;
+	width:40%;
+}
+.howold h1 {
+	color:#00CCFF;
+	font-size:2.3em;
+	letter-spacing:0.1em;
+	line-height:0.5em;
+}
+.howold h2 {
+	color:#5591E2;
+	font-size:5.4em;
+	line-height:0.8em;
+}
+.howold h3 {
+	color:#75BED0;
+	font-size:1.7em;
+	line-height:1.4em;
+}
+.howold h1, .howold h2, .howold h3 {
+	font-family:"Impact",Verdana,Arial,Helvetica,sans-serif;
+	font-weight:normal;
+	letter-spacing:0.05em;
+	margin:0;
+	text-transform:lowercase;
+}
+
+#error {
+	color: #e24040;
+	font-size: 1.5em;
+	margin-top: 10px;
+}
+/*Lightbox background */  
+#lightbox {  
+	 display:none;  
+	 background:#000000;  
+	 opacity:0.9;  
+	 filter:alpha(opacity=90);  
+	 position:absolute;  
+	 top:0px;  
+	 left:0px;  
+	 min-width:100%;  
+	 min-height:100%;  
+	 z-index:1000;   
+} 
+/* Lightbox panel with some content */
+#about-panel {
+	 display:none;
+	 position:fixed;
+	 top:100px;
+	 left:50%;
+	 margin-left:-200px;
+	 width:400px;
+	 background:#02151f;
+	 padding:10px 15px 10px 15px;
+	 border:2px solid #092b3a;
+	 z-index:1001;
+	 color: #fff;
+}
+
+#about-panel span {
+	font-size: 0.5em;
+	vertical-align: top;
+}
+
+#aboutLink {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	margin: 15px;
+}
+#aboutLink a, #aboutLink a:link, #aboutLink a:visited, #aboutLink a:hover{
+	color: #fff;
+	font-size: 1.2em;
+	text-decoration: none;
+}
+#about-panel a, #about-panel a:link, #about-panel a:visited, #about-panel a:hover{
+	color: #fff;
+}

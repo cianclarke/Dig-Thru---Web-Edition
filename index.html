@@ -1,0 +1,67 @@
+<html>
+<head>
+<script src="http://maps.google.com/maps/api/js?sensor=true&amp;key=ABQIAAAAssW_vpKQ26cxNvwYJwawxhRfE1OiJsFEVQye51YG_jpt6ESfXRTLPuoUe17PpVZ68DqnDVoljH0U2A" type="text/javascript"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.5.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<script type=text/javascript>
+   function clearField(field){
+	  field.value = "";
+  }
+
+</script>
+
+  <div id="location" style="">
+  
+  
+		<div style="" class="howold">
+			How often do you ask yourself<br>
+			<h2>wait...</h2><br>
+			<h1>what'd happen</h1><br>
+			<h3>if I kept on digging?</h3><br>
+			<span style="font-size: 1.2em;">Would I <i>really</i> reach Australia?</span> <br>
+			<span style="font-size: 1.0em;">(hint: probably not).</span><br> <br />
+			So, where do you live? 
+		</div>
+		
+  			<form id="addressSearch" method="post" action="">
+				<input name="address" type="text" id="address" value="Enter a street address, town, country or zip code..." onFocus="clearField(this)" />
+				<button type="submit" style="" id="goButton">Go</button>
+				<div id="error"></div>
+				<div id="about"></div>
+		</form>
+</div>
+
+  <div id="mapcanvas" style="display:none;"></div>
+  <div id="shovel" style=""></div>
+  <div id="aboutLink" style="">
+  	<a href="#" id="show-panel">About</a>
+  </div>
+  
+  
+  
+  
+  <div id="lightbox"> </div><!-- /lightbox -->
+<div id="about-panel">
+<h2>Dig Thru<span>1.0a</span> - developed by</h2>
+<p><a href="http://www.inisdesign.com"><img border="0" src="http://www.inisdesign.com/templates/siteground-j15-39/images/logo.png" alt="Inis Design" /></a> &nbsp; &nbsp; &&nbsp; &nbsp;  <a href="http://www.cianclarke.com" style="text-decoration: none;">Cian Clarke</a></p>
+<p>Dig Thru is a tool to discover <a href="http://en.wikipedia.org/wiki/Antipodes">Antipodes" (see Wikipedia)</a>. It is implemented in AJAX with the JQuery library.
+<br /> The calculation is simple: <br />
+&nbsp;&nbsp;	var endLat = start[0] * -1;<br />
+&nbsp;&nbsp;	var endLong = (start[1]>0) ? start[1]-180 : start[1] + 180;<br />
+<br />
+The moving map implementation comes from Chris Heillman's awesome <a href="https://github.com/codepo8/HTML5---map-and-video-syncing/blob/master/map.js">map.js</a>.
+</p>
+<p align="center">
+<a id="close-panel" href="#">Close this window</a>
+</p>
+</div><!-- /lightbox-panel -->
+
+  
+
+</body>
+</html>
